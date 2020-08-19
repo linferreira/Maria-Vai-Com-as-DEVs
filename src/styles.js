@@ -8,7 +8,14 @@ export const Header = styled.div`
   padding: 80px 500px;
 `;
 
-export const Title = styled.h1``;
+export const Title = styled.h1`
+`;
+
+export const Subtitle = styled.p`
+  display: flex;
+  align-self: center;
+  margin-bottom: 40px;
+`;
 
 export const Paragraph = styled.div`
   display: flex;
@@ -48,4 +55,12 @@ export const Box = styled.div`
   background: #c4c4c4;
   height: 150px;
   width: 250px;
+`;
+
+export const Collapse = styled.div`
+  display: flex;
+  padding: 40px;
+  margin: 0 130px 116px;
+  flex-direction: column;
+  background: #c4c4c4;
 `;
