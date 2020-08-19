@@ -4,11 +4,12 @@ export const Header = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #c4c4c4;
+  background: #323a50;
   padding: 80px 500px;
 `;
 
 export const Title = styled.h1`
+  color: #ffffff;
 `;
 
 export const Subtitle = styled.p`
@@ -30,18 +31,20 @@ export const Serasa = styled.div`
   align-items: center;
   padding: 59px 150px 34px;
   height: 150px;
-  background: #c4c4c4;
+  background: #e63888;
 `;
 
-export const Circle = styled.span`
-  background: #fff;
-  height: 100px;
-  width: 150px;
+export const Circle = styled.img`
+  width: 200px;
   margin-right: 148px;
 `;
 
+export const CircleText = styled.p`
+  color: #fff;
+`;
+
 export const Footer = styled.div`
-  background: #c4c4c4;
+  background: #323a50;
   height: 50px;
 `;
 

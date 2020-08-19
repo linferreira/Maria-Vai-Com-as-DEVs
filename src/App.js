@@ -1,12 +1,15 @@
 import React from "react";
 
+import LogoSerasa from './images/serasa-white.svg'
+
 import {
   Header,
   Title,
   Subtitle,
   Paragraph,
-  Serasa,
   Circle,
+  CircleText,
+  Serasa,
   Footer,
   Box,
   BoxContainer,
@@ -104,14 +107,14 @@ function App() {
       </Paragraph>
 
       <Serasa>
-        <Circle />
+        <Circle src={LogoSerasa} width={200} />
 
-        <p>
+        <CircleText>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non
           nibh vulputate tempus sit fringilla egestas. Neque amet sit est quis
           donec commodo. Mi lacus tempor ac eu lorem eu augue pharetra id. Quam
           scelerisque donec sed elementum pharetra
-        </p>
+        </CircleText>
       </Serasa>
 
       <BoxContainer>
