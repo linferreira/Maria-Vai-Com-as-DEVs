@@ -18,8 +18,8 @@ Desenvolvido pelas maravilhosas:
   <li>Larissa</li>
 </ul>
 
-<h2>Resultado:</h2>
-<img src="https://ibb.co/FhPTfMh" height='500' width='300'/>
+
+<a href="https://ibb.co/FhPTfMh"> <h2>Veja o resultado aqui</h2> </a>
 
 
 
