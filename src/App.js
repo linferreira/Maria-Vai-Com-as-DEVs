@@ -17,6 +17,8 @@ import {
   Collapse,
   C1,
   C2,
+  Group,
+  Program
 } from "./styles";
 
 function App() {
@@ -76,9 +78,13 @@ function App() {
   return (
     <>
       <Header>
-        <Title style={{ fontSize: "65px", fontFamily: "arial" }}>
-          <C1>Co.</C1>
-          <C2>Labor</C2>
+        <Title>
+          <Group>
+            <C1>Co.</C1>
+            <C2>Labor</C2>
+          </Group>
+
+          <Program>Maria Vai Com as DEVs</Program>
         </Title>
       </Header>
 
@@ -197,7 +203,7 @@ function App() {
         </Collapse>
       )}
 
-      <Footer />
+      <Footer>Feito com carinho - Equipe Co.Labor ♥</Footer>
     </>
   );
 }

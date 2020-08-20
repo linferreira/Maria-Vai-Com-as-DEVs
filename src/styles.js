@@ -9,9 +9,9 @@ export const Header = styled.div`
   background: #323a50;
 `;
 
-export const Title = styled.h1`
+export const Title = styled.div`
   display: flex;
-  color: rgba(0, 8, 38, 0.8);
+  flex-direction: column;
 `;
 
 export const Subtitle = styled.p`
@@ -55,7 +55,12 @@ export const CircleText = styled.p`
 `;
 
 export const Footer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #323a50;
+  color: #fff;
+  font-family: Arial;
   height: 50px;
 `;
 
@@ -72,11 +77,13 @@ export const Box = styled.div`
   background: #e63888;
   border-radius: 10px;
 `;
+
 export const Text = styled.p`
   color: #fff;
   text-align: center;
   padding-top: 35px;
 `;
+
 export const Collapse = styled.div`
   display: flex;
   padding: 40px;
@@ -89,7 +96,29 @@ export const Collapse = styled.div`
 
 export const C1 = styled.p`
   color: #fb92a2;
+  font-weight: bold;
+  margin: 0;
 `;
+
 export const C2 = styled.p`
   color: #4dbad1;
+  font-weight: bold;
+  margin: 0;
+`;
+
+export const Group = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 65px;
+  font-family: Arial;
+  border-bottom: 1px solid #c4c4c4;
+`;
+
+export const Program = styled.p`
+  display: flex;
+  align-self: center;
+  font-size: 20px;
+  font-family: Arial;
+  color: #c4c4c4;
 `;
