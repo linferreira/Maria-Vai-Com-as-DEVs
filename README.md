@@ -18,8 +18,10 @@ Desenvolvido pelas maravilhosas:
   <li>Larissa</li>
 </ul>
 
+<img src="https://i.ibb.co/L0G7qW0/screencapture-localhost-3000-1597887089990.png" alt="some text" width='50%' height='50%'>
 
-<a href="https://maria-vai-com-as-dev-s.vercel.app/"> <h2>Veja o resultado aqui</h2> </a>
+
+<a href="https://maria-vai-com-as-dev-s.vercel.app/" target='_blank'> <h2>Veja o resultado aqui</h2> </a>
 
 
 
