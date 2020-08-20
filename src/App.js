@@ -1,6 +1,6 @@
 import React from "react";
 
-import LogoSerasa from './images/serasa-white.svg'
+import LogoSerasa from "./images/serasa-white.svg";
 
 import {
   Header,
@@ -10,10 +10,13 @@ import {
   Circle,
   CircleText,
   Serasa,
+  Text,
   Footer,
   Box,
   BoxContainer,
   Collapse,
+  C1,
+  C2,
 } from "./styles";
 
 function App() {
@@ -22,46 +25,33 @@ function App() {
   const [buttonC, setButtonC] = React.useState(false);
 
   const groupA = {
-    title:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non nibh vulputate tempus sit fringilla egestas",
+    title: "Benefícios para Pessoas Físicas Cadastradas",
     options: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "Quisque eu ex dignissim, viverra nulla eget, venenatis massa",
-      "Pellentesque finibus est eu purus gravida, eu fringilla tellus interdum",
-      "Donec efficitur massa in ornare lobortis",
-      "Vestibulum commodo sem non sapien dapibus, in viverra velit gravida.",
-      "Nunc eu turpis at neque tempor volutpat",
-      "Aliquam vel libero tempus, fermentum nulla malesuada, placerat orc",
-      "Nunc elementum dolor a finibus eleifend",
-      "In ut tellus sed augue lobortis lobortis",
+      "Inserção no mercado de trabalho através de empresas parceiras",
+      "Oportunidades de capacitação através de aulas de educação financeira e empreendedorismo",
+      "Oportunidades de treinamentos para o mercado de trabalho",
+      "Acesso a produtos e serviços dos MEI’s cadastrados, com descontos.",
     ],
   };
 
   const groupB = {
-    title:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..",
+    title: "Benefícios para Micro e Pequenas Empresas Cadastradas",
     options: [
-      "Vestibulum commodo sem non sapien dapibus, in viverra velit gravida.",
-      "Nunc eu turpis at neque tempor volutpat",
-      "Aliquam vel libero tempus, fermentum nulla malesuada, placerat orc",
-      "Nunc elementum dolor a finibus eleifend",
-      "In ut tellus sed augue lobortis lobortis",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "Quisque eu ex dignissim, viverra nulla eget, venenatis massa",
-      "Pellentesque finibus est eu purus gravida, eu fringilla tellus interdum",
-      "Donec efficitur massa in ornare lobortis",
+      "Incentivo fiscal de acordo com o número de pessoas em vulnerabilidade inscritas no programa e ligadas a empresa;",
+      "Ajuda financeira para microempreendedores",
+      "Aumento de taxa de crédito com maior prazo para pagamento",
+      "Menores taxas de juros",
+      "Parceria com o Governo Federal para obter ajuda com parte dos salários de futuros empregados cadastrados no Co.Labor",
+      "Novas linhas de crédito, juros mais  baixos e opções de negociação de dívidas",
     ],
   };
 
   const groupC = {
-    title:
-      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
+    title: "Benefícios para Médias e Grandes Empresas Cadastradas",
     options: [
-      "Nunc elementum dolor a finibus eleifend",
-      "In ut tellus sed augue lobortis lobortis",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "Quisque eu ex dignissim, viverra nulla eget, venenatis massa",
-      "Pellentesque finibus est eu purus gravida, eu fringilla tellus interdum",
+      "Incentivos ficais para empresas parceiras",
+      "Apadrinhe e ajude microempreendedores",
+      "Colabore com vagas de consultoria econômica e soluções para pessoas em vulnerabilidade (empregos, capacitação específica, polos de atendimento e formações especializadas)",
     ],
   };
 
@@ -86,50 +76,87 @@ function App() {
   return (
     <>
       <Header>
-        <Title>Titulo</Title>
+        <Title style={{ fontSize: "65px", fontFamily: "arial" }}>
+          <C1>Co.</C1>
+          <C2>Labor</C2>
+        </Title>
       </Header>
 
       <Paragraph>
-        <p>
-          I'm standing here on the parking lot of- This is uh, this is heavy
-          duty, Doc, this is great. Uh, does it run on regular unleaded
-          gasoline? You got a permit for that? Your, your right. whoa, whoa Doc,
-          stuck here, I can't be stuck here, I got a life in 1985. I got a girl.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non
-          nibh vulputate tempus sit fringilla egestas. Neque amet sit est quis
-          donec commodo. Mi lacus tempor ac eu lorem eu augue pharetra id. Quam
-          scelerisque donec sed elementum pharetra. Sagittis, pellentesque
-          tellus massa sed sit eget tellus. Ullamcorper fringilla nulla sed
-          faucibus. Malesuada vel, arcu ultrices ultrices. Lectus tellus
-          dictumst mattis amet, iaculis dui quam lacus sed. Diam commodo
-          ultrices massa libero ac, amet sodales.
+        <p style={{ fontSize: "20px", fontFamily: "arial" }}>
+          &emsp;&emsp;<b style={{ fontSize: "40px" }}>D</b>esde o início da
+          pandemia do novo Coronavírus, efeitos devastadores têm atingido a
+          economia brasileira e nesse cenário encontram-se brasileiros que
+          sofrem bem mais com tais efeitos: são as
+          <b> pessoas em situação de vulnerabilidade</b>, apresentando um sério
+          comprometimento de suas finanças pessoais. Paralelamente, o setor de
+          <b> micro e pequenas empresas</b> também apresenta números alarmantes
+          de pedidos de falência, demissão de funcionários e redução drástica
+          seu faturamento mensal.
+          <br></br>
+          &emsp;&emsp;A proposta do{" "}
+          <b style={{ fontSize: "25px" }}>Projeto Co.Labor</b> tem como
+          público-alvo principal as pessoas em situação de vulnerabilidade. A
+          situação de micro e pequenas empresas também é considerada pelo nosso
+          produto ao promovermos uma ligação entre pessoas vulneráveis e micro e
+          pequenas empresas, onde ambos se beneficiariam dessa relação. Com uma
+          parcela de incentivo federal, as empresas receberiam não apenas
+          incentivos fiscais, mas também parte do salário de seus funcionários
+          ao comprometerem-se a gerar novas vagas de emprego para cidadãos, com
+          especial ênfase em cidadãos em situação de vulnerabilidade e baixo
+          nível de crédito.
         </p>
       </Paragraph>
 
       <Serasa>
-        <Circle src={LogoSerasa} width={200} />
+        <Circle src={LogoSerasa} height={100} />
 
-        <CircleText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non
-          nibh vulputate tempus sit fringilla egestas. Neque amet sit est quis
-          donec commodo. Mi lacus tempor ac eu lorem eu augue pharetra id. Quam
-          scelerisque donec sed elementum pharetra
+        <CircleText
+          style={{ fontSize: "16px", fontFamily: "arial", margin: 0 }}
+        >
+          A <b>SERASA</b> é parte intrínseca ao Projeto ao disponibilizar
+          informações de crédito e Score do bancos de dados com o intuito de
+          estabelecer conexões compatíveis entre Pessoas Físicas em estado de
+          vulnerabilidade e micro/pequenas empresas. Com a integração dos dados
+          é possível detectar os estados brasileiros mais afetados pela Pandemia
+          que são carentes de maior incentivo e também promover a sua
+          recuperação econômica por meio da inserção de cidadãos no mercado de
+          trabalho e manutenção de micro/pequenas empresas. Com a
+          disponibilização de dados, médias e grandes empresas também podem
+          escolher em quais áreas se dará a sua atuação, sempre com preferência
+          aos municípios brasileiros mais afetados.
         </CircleText>
       </Serasa>
 
       <BoxContainer>
-        <Box onClick={() => openButtonA()} />
-        <Box onClick={() => openButtonB()} />
-        <Box onClick={() => openButtonC()} />
+        <Box onClick={() => openButtonA()}>
+          <Text style={{ fontSize: "20px", fontFamily: "arial" }}>
+            PF - Pessoas Físicas
+          </Text>
+        </Box>
+        <Box onClick={() => openButtonB()}>
+          <Text style={{ fontSize: "20px", fontFamily: "arial" }}>
+            PJ - Micro e Pequenas EMpresas
+          </Text>
+        </Box>
+        <Box onClick={() => openButtonC()}>
+          <Text style={{ fontSize: "20px", fontFamily: "arial" }}>
+            PJ -Médias e Grandes Empresas
+          </Text>
+        </Box>
       </BoxContainer>
 
       {buttonA && (
         <Collapse>
-          <Subtitle>{groupA.title}</Subtitle>
+          <Subtitle style={{ fontSize: "20px", fontFamily: "arial" }}>
+            {groupA.title}
+          </Subtitle>
           <div>
             {groupA.options.map((item) => (
               <li>
-                <span>{item}</span>
+                <span style={{ fontSize: "20px", fontFamily: "arial" }}>
+                  {item}
+                </span>
               </li>
             ))}
           </div>
@@ -138,11 +165,15 @@ function App() {
 
       {buttonB && (
         <Collapse>
-          <Subtitle>{groupB.title}</Subtitle>
+          <Subtitle style={{ fontSize: "20px", fontFamily: "arial" }}>
+            {groupB.title}
+          </Subtitle>
           <div>
             {groupB.options.map((item) => (
               <li>
-                <span>{item}</span>
+                <span style={{ fontSize: "20px", fontFamily: "arial" }}>
+                  {item}
+                </span>
               </li>
             ))}
           </div>
@@ -151,11 +182,15 @@ function App() {
 
       {buttonC && (
         <Collapse>
-          <Subtitle>{groupC.title}</Subtitle>
+          <Subtitle style={{ fontSize: "20px", fontFamily: "arial" }}>
+            {groupC.title}
+          </Subtitle>
           <div>
             {groupC.options.map((item) => (
               <li>
-                <span>{item}</span>
+                <span style={{ fontSize: "20px", fontFamily: "arial" }}>
+                  {item}
+                </span>
               </li>
             ))}
           </div>
